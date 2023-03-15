@@ -5,9 +5,9 @@ import java.util.LinkedList;
 import java.util.Random;
 
 public class SkipList<T> {
-    SkipNode headNode;
-    int highLevel;
-    Random random;
+    private SkipNode headNode;
+    private int highLevel;
+    private Random random;
     final int MAX_LEVEL = 32;
 
     public SkipList() {
