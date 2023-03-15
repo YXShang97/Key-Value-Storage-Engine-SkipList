@@ -31,7 +31,7 @@ public class SkipList<T> {
         }
         return null;
     }
-    
+
     public void delete(int key) {
         SkipNode cur = headNode;
         while (cur != null) {
@@ -47,17 +47,17 @@ public class SkipList<T> {
             }
         }
     }
-    
+
     public void add(SkipNode node) {
         int key = node.key;
         SkipNode findNode = search(key);
-        
+
         // node with the same key exists
         if (findNode != null) {
             findNode.value = node.value;
             return;
         }
-        
+
         Deque<SkipNode> stack = new LinkedList<SkipNode>();
         SkipNode cur = headNode;
         while (cur != null) {
@@ -126,3 +126,4 @@ public class SkipList<T> {
         }
     }
 }
+
