@@ -1,1 +1,1 @@
-# Key-Value-Storage-Engine
+# Key-Value Storage Engine (SkipList)
